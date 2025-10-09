@@ -1,6 +1,6 @@
-# Welcome to your Expo app 👋
+# atlas-mobile-intro
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an Expo project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
 ## Get started
 
@@ -35,16 +35,25 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
-## Learn more
+----
 
-To learn more about developing your project with Expo, look at the following resources:
+### ✅ Tasks checklist:
+- [X] ​0. Getting Started (0/0 pts)
+- [ ] ​1. App Routing (0/__ pts)
+- [ ] ​2. task name (0/__ pts)
+- [ ] ​3. task name (0/__ pts)
+- [ ] ​4. task name (0/__ pts)
+- [ ] ​5. task name (0/__ pts)
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+- [ ] **Everything Done ✓** (0/__ pts) - __%
 
-Join our community of developers creating universal apps.
+>### Progress Goals:
+><strong>Thursday: ~10% (task 1)</strong>  
+<em style="color: gray">Friday: 50% (task x)</em>  
+<em style="color: gray">Saturday/Sunday: 70% (task x)</em>  
+<em style="color: gray">Monday: 100% (task x)</em>
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Completed: `N/A`
+
+---
