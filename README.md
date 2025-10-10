@@ -39,21 +39,32 @@ This command will move the starter code to the **app-example** directory and cre
 
 ### ✅ Tasks checklist:
 - [X] ​0. Getting Started (0/0 pts)
-- [ ] ​1. App Routing (0/__ pts)
-- [ ] ​2. task name (0/__ pts)
-- [ ] ​3. task name (0/__ pts)
-- [ ] ​4. task name (0/__ pts)
-- [ ] ​5. task name (0/__ pts)
+- [ ] ​1. App Routing (5/10 pts)
+- [ ] ​2. App Database (0/20 pts)
+- [ ] ​3. FlashList (0/10 pts)
+- [ ] ​4. Delete All Button (0/20 pts)
+- [ ] ​5. Swipe to Delete (0/20 pts)
+- [ ] ​6. App Styling (0/20 pts)
 
 
-- [ ] **Everything Done ✓** (0/__ pts) - __%
+- [ ] **Everything Done ✓** (5/100 pts) - 5%
 
 >### Progress Goals:
-><strong>Thursday: ~10% (task 1)</strong>  
-<em style="color: gray">Friday: 50% (task x)</em>  
-<em style="color: gray">Saturday/Sunday: 70% (task x)</em>  
-<em style="color: gray">Monday: 100% (task x)</em>
+><strong>Thursday: 10% (task 1)</strong>  
+<em style="color: gray">Friday: 40% (task 3)</em>  
+<em style="color: gray">Saturday/Sunday: 60-80% (task 4-5)</em>  
+<em style="color: gray">Monday: 100% (task 6)</em>
 
 Completed: `N/A`
 
 ---
+
+For the last couple weeks, I've been getting distracted and having to do 50-80%
+of the project in just 2 days, plus PR, yet I've still managed to keep my streak
+of all 100%s. If I can do 30-50% of a project in a single day under pressure 
+while being so distracted that I don't even start until 5PM, I can do almost as 
+much in a day if I stay focused and pretend my deadline is sooner.
+
+In fact, my personal deadline this week is Monday instead of Wednesday so that
+I can have plenty of time for PR, personal projects, and R&R. We'll see if this
+plan works out.
