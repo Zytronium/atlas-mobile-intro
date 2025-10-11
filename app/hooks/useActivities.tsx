@@ -15,10 +15,19 @@ export default function useActivities() {
     return db.getAllSync<Activity>("SELECT * FROM activities");
   }
 
-  useEffect(() => {
+  function insertActivity(steps: number, date: Date) {
+    db.execSync("INSERT INTO activities (steps, date) VALUES (${steps}, ${date.getTime()})");
+    reload();
+  }
+
+  function reload() {
     const data = getActivities();
     setActivities(data);
-  }, [])
+  }
 
-  return { getActivities, activities };
+  useEffect(() => {
+    reload();
+  }, []);
+
+  return { getActivities, activities, insertActivity };
 }

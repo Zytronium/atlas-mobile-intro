@@ -1,9 +1,9 @@
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
-import { Link, router } from "expo-router";
-import useActivities from "@/app/hooks/useActivities";
+import { router } from "expo-router";
+import { useActivitiesContext } from "@/app/components/ActivitiesProvider";
 
 export default function Index() {
-  const { activities } = useActivities();
+  const { activities } = useActivitiesContext();
   return (
     <View style={styles.container}>
       {activities.map((activity) => (

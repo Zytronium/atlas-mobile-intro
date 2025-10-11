@@ -40,14 +40,14 @@ This command will move the starter code to the **app-example** directory and cre
 ### ✅ Tasks checklist:
 - [X] ​0. Getting Started (0/0 pts)
 - [X] ​1. App Routing (10/10 pts)
-- [ ] ​2. App Database (0/20 pts)
+- [ ] ​2. App Database (10/20 pts)
 - [ ] ​3. FlashList (0/10 pts)
 - [ ] ​4. Delete All Button (0/20 pts)
 - [ ] ​5. Swipe to Delete (0/20 pts)
 - [ ] ​6. App Styling (0/20 pts)
 
 
-- [ ] **Everything Done ✓** (10/100 pts) - 0%
+- [ ] **Everything Done ✓** (20/100 pts) - 20%
 
 >### Progress Goals:
 ><strong>Thursday: 10% (task 1)</strong>  
