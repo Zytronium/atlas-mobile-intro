@@ -59,7 +59,7 @@ Completed: `N/A`
 
 ---
 
-For the last couple weeks, I've been getting distracted and having to do 50-80%
+For the last couple of weeks, I've been getting distracted and having to do 50-80% 
 of the project in just 2 days, plus PR, yet I've still managed to keep my streak
 of all 100%s. If I can do 30-50% of a project in a single day under pressure 
 while being so distracted that I don't even start until 5PM, I can do almost as 
