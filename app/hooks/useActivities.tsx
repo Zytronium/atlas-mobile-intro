@@ -16,7 +16,7 @@ export default function useActivities() {
   }
 
   function insertActivity(steps: number, date: Date) {
-    db.execSync("INSERT INTO activities (steps, date) VALUES (${steps}, ${date.getTime()})");
+    db.execSync(`INSERT INTO activities (steps, date) VALUES (${steps}, ${date.getTime()})`);
     reload();
   }
 
