@@ -1,11 +1,18 @@
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
 import { Link, router } from "expo-router";
+import useActivities from "@/app/hooks/useActivities";
 
 export default function Index() {
+  const { activities } = useActivities();
   return (
     <View style={styles.container}>
+      {activities.map((activity) => (
+        <Text style={styles.text} key={activity.id}>
+          {activity.steps} steps on{" "}
+          {new Date(activity.date).toLocaleDateString()}
+        </Text>
+      ))}
       <Text style={styles.heading}>
-        Hello World!
       </Text>
       <TouchableOpacity style={styles.button} onPress={() => {
         router.push("/add-activity-screen");
@@ -42,6 +49,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     margin: 10,
+    width: '90%',
     padding: 12.5,
     borderRadius: 17.5,
     backgroundColor: colorTeal,
