@@ -1,5 +1,5 @@
-import { Alert, Pressable, StyleSheet, Text, View } from "react-native";
-import { router } from "expo-router";
+import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
+import { Link, router } from "expo-router";
 
 export default function Index() {
   return (
@@ -7,22 +7,47 @@ export default function Index() {
       <Text style={styles.heading}>
         Hello World!
       </Text>
-      <Pressable onPress={() => {
+      <TouchableOpacity style={styles.button} onPress={() => {
         router.push("/add-activity-screen");
       }}>
-        <Text>Click Me</Text>
-      </Pressable>
+        <Text style={styles.buttonText}>Add Activity</Text>
+      </TouchableOpacity>
     </View>
   );
 }
+
+/* Until I learn how to do global themes... */
+const colorBlue = '#00003c';
+const colorTeal = '#1ed2af';
+const colorRed = '#d00414';
+const colorBeige = '#f7f0dc';
+const colorOffwhite = '#fef9e6';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: colorOffwhite,
   },
   heading: {
     fontSize: 24,
+    color: colorBlue,
+  },
+  text: {
+    fontSize: 16,
+    color: colorBlue,
+  },
+  button: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    margin: 10,
+    padding: 12.5,
+    borderRadius: 17.5,
+    backgroundColor: colorTeal,
+  },
+  buttonText: {
+    color: colorBlue,
+    fontSize: 16,
   }
 });

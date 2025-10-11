@@ -39,7 +39,7 @@ This command will move the starter code to the **app-example** directory and cre
 
 ### ✅ Tasks checklist:
 - [X] ​0. Getting Started (0/0 pts)
-- [ ] ​1. App Routing (5/10 pts)
+- [X] ​1. App Routing (10/10 pts)
 - [ ] ​2. App Database (0/20 pts)
 - [ ] ​3. FlashList (0/10 pts)
 - [ ] ​4. Delete All Button (0/20 pts)
@@ -47,11 +47,11 @@ This command will move the starter code to the **app-example** directory and cre
 - [ ] ​6. App Styling (0/20 pts)
 
 
-- [ ] **Everything Done ✓** (5/100 pts) - 5%
+- [ ] **Everything Done ✓** (10/100 pts) - 0%
 
 >### Progress Goals:
 ><strong>Thursday: 10% (task 1)</strong>  
-<em style="color: gray">Friday: 40% (task 3)</em>  
+<strong>Friday: 30% (task 2)</strong>  
 <em style="color: gray">Saturday/Sunday: 60-80% (task 4-5)</em>  
 <em style="color: gray">Monday: 100% (task 6)</em>
 
