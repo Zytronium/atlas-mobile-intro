@@ -10,7 +10,7 @@ export default function Activity({ activity }: { activity: ActivityType }) {
 
 const styles = StyleSheet.create({
   activity: {
-    paddingBottom: 32,
+    paddingBottom: 16,
     color: '#00003c',
   }
 })

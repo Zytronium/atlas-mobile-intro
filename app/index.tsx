@@ -41,7 +41,6 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   list: {
-    marginTop: 45,
     marginLeft: 20,
     height: "90%",
   },
@@ -56,7 +55,8 @@ const styles = StyleSheet.create({
   button: {
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 10,
+    alignSelf: 'center',
+    marginBottom: 10,
     width: '90%',
     padding: 12.5,
     borderRadius: 17.5,

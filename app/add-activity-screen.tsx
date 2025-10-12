@@ -17,7 +17,7 @@ export default function AddActivityScreen() {
       />
       <TouchableOpacity style={styles.button1} onPress={() => {
         insertActivity(steps, new Date());
-        // router.push("/");
+        router.push("/");
       }}>
         <Text style={styles.buttonText}>Add Activity</Text>
       </TouchableOpacity>
