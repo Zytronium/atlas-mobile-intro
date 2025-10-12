@@ -1,25 +1,27 @@
 import { TouchableOpacity, StyleSheet, Text, View } from "react-native";
 import { router } from "expo-router";
 import { useActivitiesContext } from "@/app/components/ActivitiesProvider";
+import Activity from "./components/Activity"
+import { Activity as ActivityType } from "./hooks/useActivities";
+import { FlashList } from "@shopify/flash-list"
 
 export default function Index() {
   const { activities } = useActivitiesContext();
+
   return (
-    <View style={styles.container}>
-      {activities.map((activity) => (
-        <Text style={styles.text} key={activity.id}>
-          {activity.steps} steps on{" "}
-          {new Date(activity.date).toLocaleDateString()}
-        </Text>
-      ))}
-      <Text style={styles.heading}>
-      </Text>
-      <TouchableOpacity style={styles.button} onPress={() => {
-        router.push("/add-activity-screen");
-      }}>
-        <Text style={styles.buttonText}>Add Activity</Text>
-      </TouchableOpacity>
-    </View>
+  <View style={styles.container}>
+  <View style={styles.list}>
+  <FlashList
+    renderItem={({ item }) => <Activity activity={item} />}
+    data={activities}
+  />
+  </View>
+  <TouchableOpacity style={styles.button} onPress={() => {
+    router.push("/add-activity-screen");
+  }}>
+    <Text style={styles.buttonText}>Add Activity</Text>
+  </TouchableOpacity>
+  </View>
   );
 }
 
@@ -34,8 +36,14 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center',
+    // alignItems: 'center',
     backgroundColor: colorOffwhite,
+    height: "100%",
+  },
+  list: {
+    marginTop: 45,
+    marginLeft: 20,
+    height: "90%",
   },
   heading: {
     fontSize: 24,
