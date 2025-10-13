@@ -1,6 +1,9 @@
 # atlas-mobile-intro
 
-This is an Expo project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is an Expo project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app) designed to learn
+the basics of React Native. This app is a steps count tracker with an SQL
+database that stays on the device so each device has its own separate list
+of activities.
 
 ## Get started
 
@@ -16,22 +19,6 @@ This is an Expo project created with [`create-expo-app`](https://www.npmjs.com/p
     npx expo start
    ```
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
@@ -43,19 +30,19 @@ This command will move the starter code to the **app-example** directory and cre
 - [X] ​2. App Database (20/20 pts)
 - [X] ​3. FlashList (10/10 pts)
 - [X] ​4. Delete All Button (20/20 pts)
-- [ ] ​5. Swipe to Delete (0/20 pts)
+- [X] ​5. Swipe to Delete (20/20 pts)
 - [X] ​6. App Styling (20/20 pts)
 
 
-- [ ] **Everything Done ✓** (80/100 pts) - 80%
+- [X] **Everything Done ✓** (100/100 pts) - 100%
 
 >### Progress Goals:
 ><strong>Thursday: 10% (task 1)</strong>  
 <strong>Friday: 30% ✓(task 2)</strong>  
 <strong>Saturday/Sunday: 60-80% ✓(task 4-5)</strong>  
-<strong>Monday: 100% (task 6)</strong>
+<strong>Monday: 100% ✓(task 6)</strong>
 
-Completed: `N/A`
+Completed: Monday, October 13, 2025
 
 ---
 
@@ -67,4 +54,5 @@ much in a day if I stay focused and pretend my deadline is sooner.
 
 In fact, my personal deadline this week is Monday instead of Wednesday so that
 I can have plenty of time for PR, personal projects, and R&R. We'll see if this
-plan works out.
+plan works out.  
+(it did!)

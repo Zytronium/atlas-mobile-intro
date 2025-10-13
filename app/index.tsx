@@ -1,7 +1,7 @@
 import { Alert, Pressable, StyleSheet, Text, View } from "react-native";
 import { Link } from "expo-router";
 import { useActivitiesContext } from "@/app/components/ActivitiesProvider";
-import Activity from "./components/Activity"
+import SwipeableActivity from "./components/SwipableActivity"
 import { FlashList } from "@shopify/flash-list"
 
 export default function Index() {
@@ -12,7 +12,7 @@ export default function Index() {
       <View style={styles.list}>
         <FlashList
           renderItem={({ item, index }) =>
-            <Activity
+            <SwipeableActivity
               activity={item}
               isFirst={index === 0}
               isLast={index === activities.length - 1}

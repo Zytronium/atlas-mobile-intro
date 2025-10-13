@@ -1,21 +1,9 @@
 import { Activity as ActivityType } from "../hooks/useActivities"
 import { StyleSheet, Text, View } from "react-native";
 
-export default function Activity({
-  activity,
-  isFirst,
-  isLast,
-}: {
-  activity: ActivityType;
-  isFirst?: boolean;
-  isLast?: boolean;
-}) {
+export default function Activity({ activity }: { activity: ActivityType; }) {
   return (
-    <View style={[
-      styles.activity,
-      isFirst && { marginTop: 20 },
-      isLast && { marginBottom: 10 },
-    ]}>
+    <View style={styles.activity}>
       <Text style={styles.date}>
         {new Date(activity.date).toLocaleDateString()}, {new Date(activity.date).toLocaleTimeString()}
       </Text>
@@ -33,9 +21,7 @@ const styles = StyleSheet.create({
     color: colorBlack,
     backgroundColor: colorBrightishWhite,
     borderWidth: 2.5,
-    borderRadius: 3,
     width: '100%',
-    marginTop: 10,
   },
   date: {
     fontSize: 12,
