@@ -1,10 +1,7 @@
-
-
-import { Alert, Button, Pressable, StyleSheet, Text, View } from "react-native";
-import { Link, router } from "expo-router";
+import { Alert, Pressable, StyleSheet, Text, View } from "react-native";
+import { Link } from "expo-router";
 import { useActivitiesContext } from "@/app/components/ActivitiesProvider";
 import Activity from "./components/Activity"
-import { Activity as ActivityType } from "./hooks/useActivities";
 import { FlashList } from "@shopify/flash-list"
 
 export default function Index() {
@@ -35,7 +32,7 @@ export default function Index() {
         )
       }
     >
-      <Text style={styles.buttonText2}>Delete All Activities</Text>
+      <Text style={styles.buttonText}>Delete All Activities</Text>
     </Pressable>
   </View>
   );
@@ -70,9 +67,6 @@ const styles = StyleSheet.create({
     color: colorBlack,
   },
   button1: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    alignSelf: 'center',
     width: '100%',
     padding: 16,
     backgroundColor: colorTeal,
@@ -81,16 +75,14 @@ const styles = StyleSheet.create({
     fontSize: 15,
   },
   button2: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    alignSelf: 'center',
     width: '100%',
     padding: 16,
     backgroundColor: colorRed,
+    alignItems: 'center',
     fontSize: 15,
   },
-  buttonText2: {
-    color: colorOffwhite,
+  buttonText: {
+    color: colorWhite,
     fontSize: 15,
   }
 });

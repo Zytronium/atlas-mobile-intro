@@ -20,6 +20,7 @@ const styles = StyleSheet.create({
     color: colorBlack,
     backgroundColor: colorBrightishWhite,
     borderWidth: 2.5,
+    borderRadius: 3,
     width: '100%',
     marginTop: 10,
   },
@@ -31,4 +32,4 @@ const styles = StyleSheet.create({
     padding: 4,
     paddingTop: 0,
   }
-})
+});

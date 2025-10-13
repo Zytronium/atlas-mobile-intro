@@ -24,7 +24,7 @@ export default function AddActivityScreen() {
       <Pressable style={styles.button2} onPress={() => {
         router.back();
       }}>
-        <Text style={styles.buttonText2}>Go Back</Text>
+        <Text style={styles.buttonText}>Go Back</Text>
       </Pressable>
     </View>
   );
@@ -72,12 +72,8 @@ const styles = StyleSheet.create({
     color: colorWhite,
   },
   buttonText: {
-    color: 'white',
-    fontSize: 16,
-  },
-  buttonText2: {
-    color: colorOffwhite,
-    fontSize: 16,
+    color: colorWhite,
+    fontSize: 15,
   },
   input: {
     color: colorBlue,
