@@ -53,12 +53,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     // alignItems: 'center',
-    marginTop: 20,
+    // marginTop: 20,
     backgroundColor: colorOffwhite,
     height: "100%",
   },
   list: {
-    marginTop: 40,
     marginLeft: 20,
     flex: 1,
   },

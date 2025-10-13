@@ -53,7 +53,7 @@ This command will move the starter code to the **app-example** directory and cre
 ><strong>Thursday: 10% (task 1)</strong>  
 <strong>Friday: 30% ✓(task 2)</strong>  
 <strong>Saturday/Sunday: 60-80% ✓(task 4-5)</strong>  
-<em style="color: gray">Monday: 100% (task 6)</em>
+<strong>Monday: 100% (task 6)</strong>
 
 Completed: `N/A`
 

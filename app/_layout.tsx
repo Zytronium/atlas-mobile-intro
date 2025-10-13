@@ -2,7 +2,7 @@ import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native
 import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 import 'react-native-reanimated';
-
+import { SafeAreaView } from 'react-native-safe-area-context';
 import { useColorScheme } from '@/hooks/use-color-scheme';
 import { DatabaseProvider } from "@/app/components/DatabaseProvider";
 import { ActivitiesProvider } from "@/app/components/ActivitiesProvider";
@@ -14,11 +14,19 @@ export default function RootLayout() {
     <DatabaseProvider>
       <ActivitiesProvider>
         <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
+          <SafeAreaView style={{ flex: 1 }}>
           <Stack>
-            <Stack.Screen name="index"
-                          options={{ presentation: 'modal', title: 'Home', headerShown: false}} />
+              <Stack.Screen
+                name="index"
+                options={{
+                  presentation: 'modal',
+                  title: 'Home',
+                  headerShown: false,
+                }}
+              />
           </Stack>
-          <StatusBar style="auto" />
+          <StatusBar style="dark" />
+          </SafeAreaView>
         </ThemeProvider>
       </ActivitiesProvider>
     </DatabaseProvider>
