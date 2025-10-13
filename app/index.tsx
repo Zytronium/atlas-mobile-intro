@@ -8,33 +8,42 @@ export default function Index() {
   const { activities, deleteAllActivities } = useActivitiesContext();
 
   return (
-  <View style={styles.container}>
-  <View style={styles.list}>
-  <FlashList
-    renderItem={({ item }) => <Activity activity={item} />}
-    data={activities}
-  />
-  </View>
-  <Link style={styles.button1} href={"/add-activity-screen"}>
-    <Text>Add Activity</Text>
-  </Link>
-    <Pressable
-      style={styles.button2}
-      onPress={() =>
-        Alert.alert(
-          'Confirm delete',
-          'Are you sure you want to delete ALL activities?',
-          [
-            { text: 'Cancel', style: 'cancel' },
-            { text: 'Delete', style: 'destructive', onPress: () => deleteAllActivities() },
-          ],
-          { cancelable: true }
-        )
-      }
-    >
-      <Text style={styles.buttonText}>Delete All Activities</Text>
-    </Pressable>
-  </View>
+    <View style={styles.container}>
+      <View style={styles.list}>
+        <FlashList
+          renderItem={({ item, index }) =>
+            <Activity
+              activity={item}
+              isFirst={index === 0}
+              isLast={index === activities.length - 1}
+            />}
+          data={activities}
+        />
+      </View>
+      <Link style={styles.button1} href={"/add-activity-screen"}>
+        <Text>Add Activity</Text>
+      </Link>
+      <Pressable
+        style={styles.button2}
+        onPress={() =>
+          Alert.alert(
+            'Confirm delete',
+            'Are you sure you want to delete ALL activities?',
+            [
+              { text: 'Cancel', style: 'cancel' },
+              {
+                text: 'Delete',
+                style: 'destructive',
+                onPress: () => deleteAllActivities()
+              },
+            ],
+            { cancelable: true }
+          )
+        }
+      >
+        <Text style={styles.buttonText}>Delete All Activities</Text>
+      </Pressable>
+    </View>
   );
 }
 
@@ -54,8 +63,7 @@ const styles = StyleSheet.create({
     height: "100%",
   },
   list: {
-    margin: 10,
-    marginBottom: 0,
+    marginHorizontal: 10,
     flex: 1,
   },
   heading: {
