@@ -66,11 +66,8 @@ export const Action = ({ text }: { text: string }) => {
   )
 }
 
-const colorTeal = '#1ed2af';
 const colorRed = '#d00414';
-const colorOffwhite = '#fef9e6';
 const colorWhite = 'white';
-const colorBlack = 'black';
 
 const styles = StyleSheet.create({
   actionView: {
