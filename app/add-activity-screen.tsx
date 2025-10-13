@@ -1,4 +1,4 @@
-import { StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native'
+import { Pressable, StyleSheet, Text, TextInput, View } from 'react-native'
 import { router } from "expo-router";
 import { useState } from "react";
 import { useActivitiesContext } from "@/app/components/ActivitiesProvider";
@@ -13,19 +13,19 @@ export default function AddActivityScreen() {
                  keyboardType="number-pad"
                  onChangeText={(value) => setSteps(parseInt(value))}
                  style={styles.input}
-                 placeholderTextColor={colorBeige}
+                 placeholderTextColor={colorGray}
       />
-      <TouchableOpacity style={styles.button1} onPress={() => {
+      <Pressable style={styles.button1} onPress={() => {
         insertActivity(steps, new Date());
         router.push("/");
       }}>
         <Text style={styles.buttonText}>Add Activity</Text>
-      </TouchableOpacity>
-      <TouchableOpacity style={styles.button2} onPress={() => {
+      </Pressable>
+      <Pressable style={styles.button2} onPress={() => {
         router.back();
       }}>
         <Text style={styles.buttonText2}>Go Back</Text>
-      </TouchableOpacity>
+      </Pressable>
     </View>
   );
 }
@@ -33,41 +33,43 @@ export default function AddActivityScreen() {
 const colorBlue = '#00003c';
 const colorTeal = '#1ed2af';
 const colorRed = '#d00414';
-const colorBeige = '#f7f0dc';
 const colorOffwhite = '#fef9e6';
+const colorBrightishWhite = '#fffefe';
+const colorGray = '#666666';
+const colorWhite = 'white';
+const colorBlack = 'black';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: colorBlue,
+    backgroundColor: colorOffwhite,
   },
   heading: {
     fontSize: 24,
-    color: colorTeal,
+    color: colorBlack,
+    fontWeight: 'bold',
   },
   text: {
     fontSize: 16,
-    color: colorOffwhite,
+    color: colorBlack,
   },
   button1: {
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 5,
-    width: '90%',
-    padding: 12.5,
-    borderRadius: 17.5,
-    backgroundColor: colorTeal
+    width: '100%',
+    padding: 16,
+    backgroundColor: colorTeal,
+    color: colorWhite,
   },
   button2: {
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 5,
-    width: '90%',
-    padding: 12.5,
-    borderRadius: 17.5,
-    backgroundColor: colorRed
+    width: '100%',
+    padding: 16,
+    backgroundColor: colorRed,
+    color: colorWhite,
   },
   buttonText: {
     color: 'white',
@@ -78,6 +80,12 @@ const styles = StyleSheet.create({
     fontSize: 16,
   },
   input: {
-    color: colorTeal,
+    color: colorBlue,
+    padding: 4,
+    backgroundColor: colorBrightishWhite,
+    borderWidth: 2.5,
+    width: '100%',
+    marginTop: 10,
+    marginBottom: 20,
   }
 });

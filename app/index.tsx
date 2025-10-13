@@ -1,5 +1,7 @@
-import { Alert, TouchableOpacity, StyleSheet, Text, View } from "react-native";
-import { router } from "expo-router";
+
+
+import { Alert, Button, Pressable, StyleSheet, Text, View } from "react-native";
+import { Link, router } from "expo-router";
 import { useActivitiesContext } from "@/app/components/ActivitiesProvider";
 import Activity from "./components/Activity"
 import { Activity as ActivityType } from "./hooks/useActivities";
@@ -16,12 +18,10 @@ export default function Index() {
     data={activities}
   />
   </View>
-  <TouchableOpacity style={styles.button1} onPress={() => {
-    router.push("/add-activity-screen");
-  }}>
-    <Text style={styles.buttonText}>Add Activity</Text>
-  </TouchableOpacity>
-    <TouchableOpacity
+  <Link style={styles.button1} href={"/add-activity-screen"}>
+    <Text>Add Activity</Text>
+  </Link>
+    <Pressable
       style={styles.button2}
       onPress={() =>
         Alert.alert(
@@ -36,7 +36,7 @@ export default function Index() {
       }
     >
       <Text style={styles.buttonText2}>Delete All Activities</Text>
-    </TouchableOpacity>
+    </Pressable>
   </View>
   );
 }
@@ -45,20 +45,20 @@ export default function Index() {
 const colorBlue = '#00003c';
 const colorTeal = '#1ed2af';
 const colorRed = '#d00414';
-const colorBeige = '#f7f0dc';
 const colorOffwhite = '#fef9e6';
+const colorWhite = 'white';
+const colorBlack = 'black';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    // alignItems: 'center',
-    // marginTop: 20,
     backgroundColor: colorOffwhite,
     height: "100%",
   },
   list: {
-    marginLeft: 20,
+    margin: 10,
+    marginBottom: 0,
     flex: 1,
   },
   heading: {
@@ -67,35 +67,30 @@ const styles = StyleSheet.create({
   },
   text: {
     fontSize: 16,
-    color: colorBlue,
+    color: colorBlack,
   },
   button1: {
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
-    marginBottom: 5,
-    width: '90%',
-    padding: 12.5,
-    borderRadius: 17.5,
+    width: '100%',
+    padding: 16,
     backgroundColor: colorTeal,
+    textAlign: 'center',
+    color: colorWhite,
+    fontSize: 15,
   },
   button2: {
     justifyContent: 'center',
     alignItems: 'center',
     alignSelf: 'center',
-    marginBottom: 5,
-    width: '90%',
-    padding: 12.5,
-    borderRadius: 17.5,
+    width: '100%',
+    padding: 16,
     backgroundColor: colorRed,
-  },
-  buttonText: {
-    color: 'white',
-    fontSize: 16,
+    fontSize: 15,
   },
   buttonText2: {
     color: colorOffwhite,
-    fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 15,
   }
 });

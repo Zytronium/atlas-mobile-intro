@@ -24,6 +24,14 @@ export default function RootLayout() {
                   headerShown: false,
                 }}
               />
+              <Stack.Screen
+                name="add-activity-screen"
+                options={{
+                  presentation: 'modal',
+                  title: 'Add Activity',
+                  headerShown: false,
+                }}
+              />
           </Stack>
           <StatusBar style="dark" />
           </SafeAreaView>

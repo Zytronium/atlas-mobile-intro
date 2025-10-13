@@ -44,10 +44,10 @@ This command will move the starter code to the **app-example** directory and cre
 - [X] ​3. FlashList (10/10 pts)
 - [X] ​4. Delete All Button (20/20 pts)
 - [ ] ​5. Swipe to Delete (0/20 pts)
-- [ ] ​6. App Styling (0/20 pts)
+- [X] ​6. App Styling (20/20 pts)
 
 
-- [ ] **Everything Done ✓** (60/100 pts) - 60%
+- [ ] **Everything Done ✓** (80/100 pts) - 80%
 
 >### Progress Goals:
 ><strong>Thursday: 10% (task 1)</strong>  
