@@ -24,7 +24,7 @@ export default function AddActivityScreen() {
       <TouchableOpacity style={styles.button2} onPress={() => {
         router.back();
       }}>
-        <Text style={styles.buttonText}>Go Back</Text>
+        <Text style={styles.buttonText2}>Go Back</Text>
       </TouchableOpacity>
     </View>
   );
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
   button1: {
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 10,
+    margin: 5,
     width: '90%',
     padding: 12.5,
     borderRadius: 17.5,
@@ -63,13 +63,18 @@ const styles = StyleSheet.create({
   button2: {
     justifyContent: 'center',
     alignItems: 'center',
-    margin: 10,
+    margin: 5,
+    width: '90%',
     padding: 12.5,
     borderRadius: 17.5,
     backgroundColor: colorRed
   },
   buttonText: {
-    color: colorBlue,
+    color: 'white',
+    fontSize: 16,
+  },
+  buttonText2: {
+    color: colorOffwhite,
     fontSize: 16,
   },
   input: {

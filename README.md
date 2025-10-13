@@ -42,17 +42,17 @@ This command will move the starter code to the **app-example** directory and cre
 - [X] ​1. App Routing (10/10 pts)
 - [X] ​2. App Database (20/20 pts)
 - [X] ​3. FlashList (10/10 pts)
-- [ ] ​4. Delete All Button (0/20 pts)
+- [X] ​4. Delete All Button (20/20 pts)
 - [ ] ​5. Swipe to Delete (0/20 pts)
 - [ ] ​6. App Styling (0/20 pts)
 
 
-- [ ] **Everything Done ✓** (40/100 pts) - 40%
+- [ ] **Everything Done ✓** (60/100 pts) - 60%
 
 >### Progress Goals:
 ><strong>Thursday: 10% (task 1)</strong>  
 <strong>Friday: 30% ✓(task 2)</strong>  
-<strong>Saturday/Sunday: 60-80% (task 4-5)</strong>  
+<strong>Saturday/Sunday: 60-80% ✓(task 4-5)</strong>  
 <em style="color: gray">Monday: 100% (task 6)</em>
 
 Completed: `N/A`

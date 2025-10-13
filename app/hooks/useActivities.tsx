@@ -20,6 +20,11 @@ export default function useActivities() {
     reload();
   }
 
+  function deleteAllActivities() {
+    db.execSync(`DELETE FROM activities;`);
+    reload();
+  }
+
   function reload() {
     const data = getActivities();
     setActivities(data);
@@ -29,5 +34,5 @@ export default function useActivities() {
     reload();
   }, []);
 
-  return { getActivities, activities, insertActivity };
+  return { getActivities, activities, insertActivity, deleteAllActivities };
 }
